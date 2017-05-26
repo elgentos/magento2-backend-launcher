@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="elgentos_backendlauncher" translate="label" type="text" sortOrder="1000" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Backend Launcher</label>
+            <tab>advanced</tab>
+            <resource>Elgentos_BackendLauncher::config</resource>
+            <group id="keyboard" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Keyboard shortcut</label>
+                <field id="sequence_a" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>First key of shortcut sequence</label>
+                    <comment>Default is 'ctrl'</comment>
+                </field>
+                <field id="sequence_b" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Second key of shortcut sequence</label>
+                    <comment>Default is 'm'</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

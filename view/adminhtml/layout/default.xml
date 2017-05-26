@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <script src="Elgentos_BackendLauncher::js/launcher.js" />
+        <css src="Elgentos_BackendLauncher::css/launcher.css" />
+    </head>
+
+    <body>
+        <referenceContainer name="header.inner.right">
+            <block class="Magento\Framework\View\Element\Template" before="notification.messages" name="elgentos_backendlauncher_toolbar_entry" template="Elgentos_BackendLauncher::toolbar_entry.phtml" />
+        </referenceContainer>
+
+        <referenceContainer name="before.body.end">
+            <block class="Elgentos\BackendLauncher\Block\LauncherItems" name="elgentos_backendlauncher_items" />
+        </referenceContainer>
+    </body>
+</page>

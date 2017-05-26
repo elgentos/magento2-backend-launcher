@@ -1,0 +1,76 @@
+#elgentos-backendlauncher-toolbar {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 31px;
+    margin-top: -3px;
+    float: right;
+}
+#elgentos-backendlauncher-toolbar > a {
+    color: #41362f;
+}
+#elgentos-backendlauncher-toolbar > a:hover {
+    text-decoration: none;
+}
+#elgentos-backendlauncher-dialog {
+    display: none;
+}
+#elgentos-backendlauncher-input {
+    width: 100%;
+}
+
+.ui-autocomplete {
+    position: absolute;
+    display: none;
+    list-style: none;
+    min-width: 100px;
+    margin: 1px 0 0;
+    padding: 0;
+    right: 0;
+    top: 100%;
+    border: 1px solid #cac2b5;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    z-index: 990;
+}
+
+.ui-autocomplete > li {
+    padding: 5px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.ui-autocomplete > li.selected {
+    background: #eef8fc;
+}
+
+.ui-autocomplete > li:hover {
+    background: #eef8fc;
+}
+
+.ui-autocomplete > li:last-child {
+    border-bottom: none;
+}
+
+.ui-autocomplete > li > .item {
+    cursor: pointer;
+}
+
+.ui-autocomplete {
+    right: auto;
+}
+
+.ui-autocomplete > li {
+    padding: 0;
+}
+
+.ui-autocomplete > li > a {
+    display: block;
+    padding: 5px;
+}
+
+.ui-autocomplete > li > a.level-0 {
+    padding-left: 5px !important;
+}
+
+.ui-autocomplete .ui-state-focus {
+    background: #f5f5f5;
+}
